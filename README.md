@@ -8,28 +8,35 @@ It's a fan-made Linux Character Device Driver Module, sent to LKML (Linux Kernel
 
 > [!NOTE]
 > You must obtain the *Linux Kernel* from torvalds/linux or your distribution's **kernel headers** must be installed.
+> [!ALSO]
+> You can write data in it. (echo "smth u want to" > /dev/copernic_pizza)
 
-1. Move the folder `copernic_pizza` to `linux/drivers/`:
+1. **Clone this repository** to your local machine:
    ```bash
-   mv copernic_pizza linux/drivers/
+   git clone https://github.com/mehmetdemir-tr/copernic_pizza
+   ```
+
+2. Move the folder to your `linux/drivers/` directory:
+   ```bash
+   mv ../YOUR_REPO_NAME linux/drivers/copernic_pizza
    cd linux/drivers/copernic_pizza
    ```
 
-2. Compile the module:
+3. Compile the module:
    ```bash
    make
    ```
 
-3. Load the module, check kernel logs, and read from the device:
+4. Load the module, check kernel logs, and read from the device:
    ```bash
    sudo insmod copernic_pizza.ko && sudo dmesg | tail -n 3 && sudo cat /dev/copernic_pizza
    ```
 
-4. You should see the following output:
+5. You should see the following output:
    ```text
    ❯ sudo insmod copernic_pizza.ko && sudo dmesg | tail -n 3 && sudo cat /dev/copernic_pizza
    [ 1304.047451] Module is up.
    [ 1304.047455] Most Hot Pizza innn this galaxy, innn this galaxy!.
-   [ 1304.051764] Success: Mounted 16 MB Space from RAM! Addr: 00000000c4e4ae0d
+   [ 1304.051764] Success: Mounted 16 MB Space from RAM! Addr: [RAM_ADDRESS]
    *recep ivedik laugh*
    ```
