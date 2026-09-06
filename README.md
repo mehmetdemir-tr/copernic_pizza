@@ -17,7 +17,7 @@ It's a fan-made Linux Character Device Driver Module, sent to LKML (Linux Kernel
 
 2. Move the folder to your `linux/drivers/` directory:
    ```bash
-   mv ../YOUR_REPO_NAME linux/drivers/copernic_pizza
+   mv copernic_pizza linux/drivers/copernic_pizza
    cd linux/drivers/copernic_pizza
    ```
 
