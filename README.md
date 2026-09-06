@@ -7,18 +7,13 @@ It's a fan-made Linux Character Device Driver Module, sent to LKML (Linux Kernel
 ## Build
 
 > [!NOTE]
-> You must obtain the *Linux Kernel* from torvalds/linux or your distribution's **kernel headers** must be installed.
+> Your distribution's **kernel headers** must be installed.
 > Also You can write data in it. (echo "smth u want to" > /dev/copernic_pizza)
 
 1. **Clone this repository** to your local machine:
    ```bash
    git clone https://github.com/mehmetdemir-tr/copernic_pizza
-   ```
-
-2. Move the folder to your `linux/drivers/` directory:
-   ```bash
-   mv copernic_pizza linux/drivers/copernic_pizza
-   cd linux/drivers/copernic_pizza
+   cd copernic_pizza
    ```
 
 3. Compile the module:
