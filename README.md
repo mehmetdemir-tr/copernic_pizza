@@ -8,9 +8,7 @@ It's a fan-made Linux Character Device Driver Module, sent to LKML (Linux Kernel
 
 > [!NOTE]
 > You must obtain the *Linux Kernel* from torvalds/linux or your distribution's **kernel headers** must be installed.
-
-> [!ALSO]
-> You can write data in it. (echo "smth u want to" > /dev/copernic_pizza)
+> Also You can write data in it. (echo "smth u want to" > /dev/copernic_pizza)
 
 1. **Clone this repository** to your local machine:
    ```bash
